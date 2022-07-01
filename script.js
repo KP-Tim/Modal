@@ -28,10 +28,8 @@ modalOverlay.addEventListener('click', closeModal);
 
 // close modal by pressing Escape key
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    if (!modalMessage.classList.contains('hidden')) {
-      closeModal();
-    }
+  if (e.key === 'Escape' && !modalMessage.classList.contains('hidden')) {
+    closeModal();
   }
 });
 
